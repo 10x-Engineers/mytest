@@ -12,7 +12,6 @@ Welcome to Ara's documentation!
 
    introduction
    ara
-   cva6_testharness
 
 Indices and tables
 ==================
