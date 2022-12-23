@@ -283,7 +283,7 @@ Continuing on let's look at the mapping between the elements of an individual ve
 
 ..  figure:: /images/image11.png
     :alt: Image Here
-    :align: left
+    :align: center
 
 |
 
@@ -301,7 +301,8 @@ Taking another example for the same vector size of 4096-bit but with a SEW = 32 
 
 ..  figure:: /images/image24.png
     :alt: Image Here
-    :align: left
+    :align: center
+    :scale: 85%
 
 |
 
@@ -355,12 +356,3 @@ There are six Write Back Queues one from each of the Functional units. Each Func
 ..  figure:: /images/image16.png
     :alt: Image Here
     :align: center
-
-|
-
-Vector Register File Parameters
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-VRF module in Ara is defined in ara/hardware/src/lane/vector_regfile.sv module.
-
-The following configurable parameters are  defined in the VRF module:

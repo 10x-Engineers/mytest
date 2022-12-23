@@ -292,7 +292,7 @@ In the case of Natural Packing data movement between memory and the VRF is fairl
 <div class="section" id="mapping-of-vector-elements-to-the-memory-banks">
 <h3>Mapping of Vector Elements to the Memory Banks<a class="headerlink" href="#mapping-of-vector-elements-to-the-memory-banks" title="Permalink to this headline">¶</a></h3>
 <p>Continuing on let’s look at the mapping between the elements of an individual vector register and the VRF memory banks. As an example with VLEN=4096, SEW=64 and 4 lanes, we have a total 64 elements which are numbered from 0 to 63. In Natural packing vector representation V0 is shown below with Vn[x] indicating the xth 64-bit element of the vector register Vn:</p>
-<div class="figure align-left">
+<div class="figure align-center">
 <img alt="Image Here" src="_images/image11.png" />
 </div>
 <div class="line-block">
@@ -307,8 +307,8 @@ In the case of Natural Packing data movement between memory and the VRF is fairl
 </div>
 <p>For 4 lanes a 4096-bit (512B) vector requires 64 memory banks with each bank being 64-bits wide. Since there are 4 lanes with each lane having 8 banks there are a total of 32 banks in a single “row” location. Hence two memory row locations are needed for the full vector. This can be seen in the figure above, for SEW = 64, where memory row locations 0 and 1 are occupied  by V0, locations 2 &amp; 3 are occupied by V1 all the way to locations 62 &amp; 63 being occupied by V31.</p>
 <p>Taking another example for the same vector size of 4096-bit but with a SEW = 32 we have a total 128 elements which are numbered from 0 to 127. In Natural packing vector representation V0 is shown below:</p>
-<div class="figure align-left">
-<img alt="Image Here" src="_images/image24.png" />
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/image24.png"><img alt="Image Here" src="_images/image24.png" style="width: 476.0px; height: 32.3px;" /></a>
 </div>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -357,14 +357,6 @@ In the case of Natural Packing data movement between memory and the VRF is fairl
 <div class="figure align-center">
 <img alt="Image Here" src="_images/image16.png" />
 </div>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div>
-<div class="section" id="vector-register-file-parameters">
-<h3>Vector Register File Parameters<a class="headerlink" href="#vector-register-file-parameters" title="Permalink to this headline">¶</a></h3>
-<p>VRF module in Ara is defined in ara/hardware/src/lane/vector_regfile.sv module.</p>
-<p>The following configurable parameters are  defined in the VRF module:</p>
 </div>
 </div>
 </div>
